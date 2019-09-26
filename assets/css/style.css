@@ -647,7 +647,7 @@
   .pb_cover_v3>.container>.row,
   .pb_cover_v4>.container>.row {
     height: inherit;
-    padding: 6em 0;
+    /* padding: 6em 0; */
   }
 }
 
@@ -725,7 +725,7 @@
   .pb_cover_v2 .heading,
   .pb_cover_v3 .heading,
   .pb_cover_v4 .heading {
-    font-size: 42px;
+    font-size: 1.5rem;
   }
 }
 
@@ -738,6 +738,10 @@
   color: rgba(255, 255, 255, 0.8);
   max-width: 600px;
   float: left;
+}
+
+.pb_cover_v3 .sub-heading{
+  width: 100%;
 }
 
 .pb_cover.text-center .sub-heading,
@@ -2547,5 +2551,18 @@ img {
 }
 .section-title{
   font-weight: 400;
-  letter-spacing:1rem;
+  letter-spacing:.5rem;
+}
+@media (max-width:768px) {
+  .hidden-xs{
+    display: none;
+  }
+}
+.show-xs{
+  display: none;
+}
+@media (max-width:768px) {
+  .show-xs{
+    display: block;
+  }
 }
